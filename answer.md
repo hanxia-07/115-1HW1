@@ -1,74 +1,96 @@
 # 第1次作業題目-隨堂-HW1
+
 >
->學號：1234567 (換成自己的)
+>學號：113111145
 ><br />
->姓名：王小明 (換成自己的)
+>姓名：廖峯緯
 ><br />
->作業撰寫時間：180 (mins，包含程式撰寫時間，換成自己的)
+>作業撰寫時間：80 (mins，包含程式撰寫時間)
 ><br />
->最後撰寫文件日期：2023/09/22 (換成自己的)
+>最後撰寫文件日期：2026/10/08
 >
 
-本份文件包含以下主題：(至少需下面兩項，若是有多者可以自行新增)
+本份文件包含以下主題：
 - [x] 說明內容
 - [x] 其他 (可以包含心得或是想跟老師反映)
 
 ## 說明內容
 
-開始寫說明，該說明需說明想法，
-並於之後再對上述想法的每一部分將程式進一步進行展現，
-若需引用程式區則使用下面方法，
-若為.cs檔內程式除了於敘述中需註明檔案名稱外，
-還需使用語法` ```語言種類 程式碼 ``` `，其中語言種類若是要用python則使用py，java則使用java，C/C++則使用cpp，
-下段程式碼為語言種類選擇csharp使用後結果：
+### 1. 完成 GitHub 倉庫 Fork 說明
 
-```csharp
-public void mt_getResult(){
-    ...
-}
-```
+**操作步驟說明：**
+1. 開啟瀏覽器進入老師於 GitHub 上的作業倉庫頁面。
+2. 點選頁面右上角的 `Fork` 按鈕。
+3. 在彈出的設定畫面中，確認將 Owner 指定為自己的 GitHub 帳號，並維持倉庫名稱不變。
+4. 點選 `Create fork` 即可成功將專案複製一份至自己的遠端倉庫下。
 
-若要於內文中標示部分網頁檔，則使用以下標籤` ```html 程式碼 ``` `，
-下段程式碼則為使用後結果：
+![Fork 截圖]({F018535D-307C-48F6-AD4C-BA76650928E7}.png)
 
-```html
-<%@ Page Language="C#" AutoEventWireup="true" ...>
+---
 
-<!DOCTYPE html>
+### 2. Markdown 基本寫作語法介紹與範例
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" ...>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
-```
-更多markdown方法可參閱[https://ithelp.ithome.com.tw/articles/10203758](https://ithelp.ithome.com.tw/articles/10203758)
+Markdown 是一種輕量級標記語言，常用於撰寫專案說明文件（如 README.md）。以下介紹幾種常見的語法：
 
-請在撰寫"說明程式與內容"該塊內容，請把原該塊內上述敘述刪除，該塊上述內容只是用來指引該怎麼撰寫內容。
+1. **標題 (Headers)**
+   - 語法：使用 `#` 到 `######` 表示一級到六級標題。
+   - 範例：
+     ```markdown
+     # 一級標題
+     ## 二級標題
+     ### 三級標題
+     ```
 
-1. 
+2. **粗體與斜體 (Emphasis)**
+   - 語法：使用 `**文字**` 表示粗體，`*文字*` 表示斜體。
+   - 範例：`**這是粗體文字**`，`*這是斜體文字*`
 
-Ans:
+3. **清單 (Lists)**
+   - 語法：無序清單使用 `-` 或 `*`；有序清單使用數字加點 `1.`。
+   - 範例：
+     ```markdown
+     - 項目一
+     - 項目二
 
+     1. 第一步
+     2. 第二步
+     ```
 
-2. 
+4. **程式碼區塊 (Code Blocks)**
+   - 語法：使用三個反引號包裹，並可指定程式語言進行語法高亮。
+   - 範例：
+     ```python
+     def hello_world():
+         print("Hello, Git!")
+     ```
 
-Ans:
+5. **超連結與圖片 (Links & Images)**
+   - 語法：連結為 `[顯示文字](網址)`；圖片為 `![替代文字](圖片路徑)`。
+   - 範例：
+     ```markdown
+     [GitHub 官網](https://github.com)
+     ![示意圖](./images/git_graph.png)
+     ```
 
-3. 
+---
 
-Ans:
+### 3. Git 分支操作與 Git Graph 說明
 
+**操作步驟與指令紀錄：**
 
-4. 
+1. **建立新分支並切換：**
+   使用 `git checkout -b` 建立名稱為 `feature-113111145` 的分支並切換過去：
+   ```bash
+   git checkout -b feature-113111145
+![Git Graph]({E88F4995-C095-4422-B30B-1A75913088A1}.png)
 
-Ans:
+---
 
-## 其他
+### 4. GitHub 個人 Profile 網址設定與截圖:
+![GitHub Profile]({24E19BF5-15BE-46C8-BE76-FC07A464F618}.png)
+
+---
+
+### 其他.
+**心得：**
+本次作業完整練習了 Git 的標準版控流程（Fork、Clone、Branch、Commit、Merge 與 Push），並學習運用 Markdown 語法撰寫文件。過程中雖然遇到了目錄路徑與存檔的小插曲，但透過終端機指令與 VSCode 介面的互相比對，對版本控制有更深刻的認識。
